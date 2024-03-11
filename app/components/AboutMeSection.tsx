@@ -60,7 +60,8 @@ const AboutMeSection = () => {
     <section className="text-white border-t border-orange-500">
       <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-16 sm:px-16">
         <Image
-          className="rounded-3xl"
+          priority
+          className="rounded-3xl justify-self-center"
           src="/about-me.png"
           alt="aboutme"
           width={400}
@@ -73,7 +74,7 @@ const AboutMeSection = () => {
             a controls engineer who writes controls programs for refrigeration
             equipment. I started full-stack development as a hobby and have
             grown to love it more with time. I have experience in Javascript,
-            SQL, HTML, css, React.js, next.js, python, as well as several other
+            React.js, Next.js, SQL, HTML, css, python, as well as several other
             technologies. I am committed to excellent end-user experiences in
             everything that I do. I am always exited to learn more and take on
             new programming challenges.
