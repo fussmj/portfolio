@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import AboutMeSection from "./components/AboutMeSection";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   //bg-[#28103b]
