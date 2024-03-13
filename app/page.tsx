@@ -3,6 +3,9 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import AboutMeSection from "./components/AboutMeSection";
 import ProjectCard from "./components/ProjectCard";
+import ProjectSection from "./components/ProjectSection_animated";
+import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   //bg-[#28103b]
@@ -16,7 +19,10 @@ export default function Home() {
       <div className="container mt-24 mx-auto space-y-5">
         <HeroSection />
         <AboutMeSection />
+        <ProjectSection />
+        <EmailSection />
       </div>
+      <Footer />
     </main>
   );
 }

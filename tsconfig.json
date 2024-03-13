@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/ProjectCard.jsx"
+    "app/components/ProjectCard.jsx",
+    "app/api/send/route.js"
   ],
   "exclude": ["node_modules"]
 }

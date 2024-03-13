@@ -15,7 +15,8 @@ const HeroSection = () => {
             Matthew
           </h1>
           <p className="text-[#adb7be] text-lg lg:text-xl">
-            Engineer and full-stack developer.
+            Engineer and full-stack developer. This portfolio site is a work in
+            progress!
           </p>
           <HireAndResumeButtons />
         </div>
