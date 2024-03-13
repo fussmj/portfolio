@@ -86,7 +86,11 @@ const ProjectSection = () => {
 
   return (
     <>
-      <motion.div key={containerKey} id={id} className="overflow-hidden">
+      <motion.div
+        key={containerKey}
+        id={id}
+        className="overflow-hidden border-t border-orange-500 py-10"
+      >
         <motion.div
           id="inner-carousel"
           className="flex space-x-5"
