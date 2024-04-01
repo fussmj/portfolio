@@ -85,7 +85,7 @@ const ProjectSection = () => {
   }, [handleLeftConstraint]);
 
   return (
-    <>
+    <section id="projects">
       <motion.div
         key={containerKey}
         id={id}
@@ -112,7 +112,7 @@ const ProjectSection = () => {
           })}
         </motion.div>
       </motion.div>
-    </>
+    </section>
   );
 };
 

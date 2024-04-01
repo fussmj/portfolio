@@ -17,16 +17,19 @@ const EmailSection = () => {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
     const response = await axios.post(endpoint, data);
+    console.log(response);
     if (response.status === 200) {
       setEmailSent(true);
     }
   }
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+    >
       <div>
         <h5 className="text-xl font-bold text-white my-2">{"Let's Connect"}</h5>
         <p className="text-[#adb7be] mb-4 max-w-md">
