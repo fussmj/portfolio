@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import NavLink from "./NavLink";
 
 const HireAndResumeButtons = () => {
   async function handleClick() {}
@@ -8,7 +9,7 @@ const HireAndResumeButtons = () => {
   return (
     <div className="mt-2">
       <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-orange-500 via-violet-400 to-cyan-400 hover:bg-slate-800 text-white">
-        <a href="#contact">Hire Me!</a>
+        <NavLink href="#contact" title="Hire Me!" />
       </button>
       <button
         onClick={handleClick}

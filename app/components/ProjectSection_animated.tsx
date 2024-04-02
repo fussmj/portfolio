@@ -9,11 +9,12 @@ import { useEffect, useState, useCallback } from "react";
 const PROJECT_DATA = [
   {
     id: 1,
-    title: "project 1",
-    description: "description of project 1",
-    image: "/project1.png",
+    title: "OptiCool Technologies Website",
+    description:
+      "This is a project that I worked on for OptiCool Technologies while employed there. This is their website hosted on HubSpot.",
+    image: "/project-opticool.png",
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://www.opticooltechnologies.com",
   },
   {
     id: 2,

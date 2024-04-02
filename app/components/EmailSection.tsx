@@ -9,6 +9,27 @@ import { useState } from "react";
 
 const EmailSection = () => {
   const [emailSent, setEmailSent] = useState(false);
+  const [formState, setFormState] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function updateFormState(e) {
+    const id = e.target.id;
+    switch (id) {
+      case "email":
+        setFormState({ ...formState, email: e.target.value });
+        break;
+      case "subject":
+        setFormState({ ...formState, subject: e.target.value });
+        break;
+      case "message":
+        setFormState({ ...formState, message: e.target.value });
+        break;
+    }
+  }
+
   async function handleSubmit(e: any) {
     setEmailSent(false);
     e.preventDefault();
@@ -20,9 +41,13 @@ const EmailSection = () => {
     const endpoint = "/api/send";
 
     const response = await axios.post(endpoint, data);
-    console.log(response);
     if (response.status === 200) {
       setEmailSent(true);
+      setFormState({
+        email: "",
+        subject: "",
+        message: "",
+      });
     }
   }
   return (
@@ -48,7 +73,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col" onSubmit={handleSubmit} id="emailform">
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -59,6 +84,8 @@ const EmailSection = () => {
             <input
               type="email"
               id="email"
+              value={formState.email}
+              onChange={updateFormState}
               required
               placeholder="matthew@gmail.com"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mb-1"
@@ -74,6 +101,8 @@ const EmailSection = () => {
             <input
               type="text"
               id="subject"
+              value={formState.subject}
+              onChange={updateFormState}
               required
               placeholder="Let's have a chat"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -89,6 +118,8 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
+              value={formState.message}
+              onChange={updateFormState}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5 min-h-36"
               placeholder="What would you like to talk about?"
             />
