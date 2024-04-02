@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/components/ProjectCard.jsx",
-    "app/api/send/route.js"
+    "app/api/send/route.js",
+    "app/components/NavLink.tsx"
   ],
   "exclude": ["node_modules"]
 }
