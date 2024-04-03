@@ -12,7 +12,7 @@ const PROJECT_DATA = [
     title: "OptiCool Technologies Website",
     description:
       "This is a project that I worked on for OptiCool Technologies while employed there. This is their website hosted on HubSpot.",
-    image: "/project-opticool.png",
+    image: "/project-opticool.PNG",
     gitUrl: "/",
     previewUrl: "https://www.opticooltechnologies.com",
   },
