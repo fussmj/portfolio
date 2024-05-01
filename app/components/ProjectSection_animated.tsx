@@ -18,11 +18,12 @@ const PROJECT_DATA = [
   },
   {
     id: 2,
-    title: "project 2",
-    description: "description of project 2",
-    image: "/project2.png",
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Issue Tracker Example",
+    description:
+      "A simple issue tracker that demonstrates full-stack capability. It implements PostgreSQL database and user login with google account.",
+    image: "/project-issue-tracker.PNG",
+    gitUrl: "https://github.com/fussmj/issue-tracker",
+    previewUrl: "https://issue-tracker-eta-ten.vercel.app/",
   },
   {
     id: 3,
