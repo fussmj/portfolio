@@ -8,15 +8,6 @@ import { useEffect, useState, useCallback } from "react";
 //assign dummy project data
 const PROJECT_DATA = [
   {
-    id: 1,
-    title: "OptiCool Technologies Website",
-    description:
-      "This is a project that I worked on for OptiCool Technologies while employed there. This is their website hosted on HubSpot.",
-    image: "/project-opticool.PNG",
-    gitUrl: "/",
-    previewUrl: "https://www.opticooltechnologies.com",
-  },
-  {
     id: 2,
     title: "Issue Tracker Example",
     description:
